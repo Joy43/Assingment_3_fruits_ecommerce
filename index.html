@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <title>Assingment-3_fruits</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font asewome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- tailwind link -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- boosteap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+
+
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        backgroundImage: {
+          'hero-bg': "url('./images/banner1.jpg')",
+        },
+      },
+    },
+  }
+</script>
+
+</head>
+<body>
+    
+    <!-- -------nav bar ----------------------- -->
+   
+    <nav class="bg-red-500 text-white mt-1.5 p-4 rounded-3xl mx-2 ">
+        <div class="container mx-auto">
+          <div class="flex justify-between items-center ">
+            <!-- Brand/logo (adjust as needed) -->
+            <!-- <a href="#" class="text-white font-bold text-xl">Your Brand</a> -->
+            
+            
+            
+            <!------------------ Mobile menu button ------------>
+            <button class="lg:hidden text-white focus:outline-none">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                ></path>
+              </svg>
+            </button>
+      
+            <!-- Desktop menu items -->
+            <div class="hidden lg:flex space-x-4">
+
+                <!-- nav icon-photo -->
+
+
+              <a href="#" class="text-white hover:text-cyan-600">Home</a>
+              <a href="#" class="text-white hover:text-gray-300">About</a>
+              <a href="#" class="text-white hover:text-gray-300">Services</a>
+              <a href="#" class="text-white hover:text-gray-300">Contact</a>
+
+              
+
+
+
+            </div>
+
+            <!-- fruit -->
+            <div class="inline-flex gap-2  ">
+                <img src="./images/logo.png"  class="rounded-2xl mb-1 py-2">
+                <p class=" froit text-2xl py-2 ml-1.5 ">Fruit Brust</p>
+            </div>
+            <!-- search -->
+<form action="" class=" inline-flex ">
+
+        <input type="text" placeholder="Search" class="input input-bordered w-10 md:w-auto rounded-3xl " />
+       <button><i class="fa-solid fa-magnifying-glass fa-fade -ml-8" style="color: #095ef1; "></i></button>
+</form>
+
+
+
+          </div>
+      
+          <!-- Mobile menu (hidden by default) -->
+          <div class="hidden lg:hidden">
+            <div class="pt-2 pb-4 space-y-2">
+              <a href="#" class="block text-white hover:text-gray-300">Home</a>
+              <a href="#" class="block text-white hover:text-gray-300">About</a>
+              <a href="#" class="block text-white hover:text-gray-300">Services</a>
+              <a href="#" class="block text-white hover:text-gray-300">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+<!-- --------------------  main section     -->
+
+
+
+<main>
+
+<!-- ------------------------------------------ -->
+<!-- --------slide section  ---- -->
+<!-- ----------------------- -->
+
+
+
+<div class="container">
+    <div id="carouselExampleIndicators" class="carousel slide orange-bg" data-bs-ride="true">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <!-- 1 -->
+            <div class="carousel-item active slide-1">
+                <div class="row">
+                    <div class="col-md-7">
+                        <h1 class="text-cyan-50 text-2xl"> Exotic tastes at your <br> 
+                          doorstep</h1>
+                        <p class="text-cyan-50 text-xl">Intel Pentium Silver N5030 (4M Cache, 1.10 GHz up to 3.10 GHz) RAM: 4GB DDR4, Storage: 1 TB SATA HDD Display: 15.6" HD (1366 x 768) Features: Dual speakers, Type-C</p>
+                        <div  class="text-cyan-50 text-2xl">
+                            <h1>1000$</h1>
+                        </div>
+                        <button class="buy-now">Shop Now</button>
+                    </div>
+                    <div class="col-md-5">
+                        <!-- <img src="./images/banner1.png" class="d-block w-100" alt="..."> -->
+                    </div>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div class="carousel-item slide-2">
+                <div class="row items-center">
+                    <div class="col-md-7">
+                      <h1 class="text-cyan-50 text-2xl"> Exotic tastes at your <br> 
+                        doorstep</h1>
+                        <p class="text-cyan-50 text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quos perspiciatis quidem impedit eligendi optio praesentium at consequuntur. Sit, voluptate.</p>
+                        <div class="text-cyan-50 text-2xl">
+                            <h1>200$</h1>
+                        </div>
+                        <button class="buy-now ">Shop Now</button>
+                    </div>
+                    <div class="col-md-5">
+                        
+                    </div>
+                </div>
+            </div>
+  
+            <!-- 3 -->
+            <div class="carousel-item slide-3">
+  
+                <div class="row">
+                    <div class="col-md-7">
+                      <h1 class="text-cyan-50 text-2xl"> Exotic tastes at your <br> 
+                        doorstep</h1>
+                        <p class="text-cyan-50 text-xl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam doloribus quo eaque unde eligendi veniam laborum qui fugiat earum cumque?</p>
+                        <div  class="text-cyan-50 text-2xl"">
+                            <h1>1200$</h1>
+                        </div>
+                        <button class="buy-now ">Shop Now</button>
+                    </div>
+                    <div class="col-md-5">
+                        
+  
+                    </div>
+                </div>
+            </div>
+            <!-- 4 -->
+            <div class="carousel-item slide-4">
+  
+              <div class="row">
+                  <div class="col-md-7">
+                    <h1 class="text-cyan-50 text-2xl"> Exotic tastes at your <br> 
+                      doorstep</h1>
+                      <p class="text-cyan-50 text-xl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam doloribus quo eaque unde eligendi veniam laborum qui fugiat earum cumque?</p>
+                      <div  class="text-cyan-50 text-2xl"">
+                          <h1>1200$</h1>
+                      </div>
+                      <button class="buy-now ">Shop Now</button>
+                  </div>
+                  <div class="col-md-5">
+                      
+  
+                  </div>
+              </div>
+          </div>
+          <!--  -->
+  
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    
+    </div>
+  
+  <!-- adjust slide -->
+  
+  <div class="slide-adjust  flex w-80  ml-96  items-center rounded-lg px-3 -mt-7  drop-shadow-lg justify-center   bg-fuchsia-200 ">
+      <div>
+        <img src="./images/fruit1.png" alt="">
+        <p>Orange</p>
+      </div>
+      <div>
+        <img src="./images/fruit2.png" alt="">
+        <p>coconut</p>
+      </div>
+      <div>
+        <img src="./images/fruit3.png" alt="">
+        <p>Apple</p>
+      </div>
+      
+      </div>
+  
+    
+  <!--  -->
+  
+  </div>
+<!--  -->
+
+
+
+<!-- --------------------------- -->
+<!--    even time -->
+<section class="flex  justify-around md:grid-cols-2 mt-3 bg-slate-100 drop-shadow-lg  mx-4 rounded-xl py-5">
+    <div><h1 class="text-3xl">Deal of the day</h1>
+      <p class="text-base">Deal of the dayDeal of the dayDeal of the day</p>
+    </div>
+    
+    <div class="time flex">
+      <div>
+          <h1 class="grey-900 text-3xl  ">29:</h1>
+          <p>Days</p>
+      </div>
+      <div>
+          <h1 class="grey-900 text-3xl">15:</h1>
+          <p>hour</p>
+      </div>
+      <div>
+          <h1 class="grey-900 text-3xl">25</h1>
+          <p>Minute</p>
+      </div>
+  
+  
+    </div>
+  
+   
+      
+    
+  </section>
+
+
+<!-- ------------------------------------------------------------------ -->
+<!-- -------------card 4  iteam       -------------------------------------->
+<!-- -------------------------------------------- -->
+
+
+<section class="lg:flex gap-2 ml-3 mt-3 mb-3 sm:grid ">
+<!-- 1 -->
+  
+<div class="w-full max-w-sm items-center bg-red-200 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <a href="#">
+        <img class="p-8 rounded-t-lg" src="./images/fruit5.png" alt="product image" />
+    </a>
+    <div class="px-5 pb-5">
+        <a href="#">
+            <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Apple</h5>
+  
+        </a>
+        <!-- price -->
+        <div class="grid  mt-3 items-center ">
+          <span class="text-3xl font-bold text-gray-900 dark:text-white">$599</span>
+        </div>
+  
+        <!-- line -->
+        
+        <div class="line-1 mt-3 w-32 h-1 bg-slate-400 "></div>
+        <!--  -->
+  <!-- review icon -->
+        <div class="flex items-center mt-2.5 mb-5">
+            <svg class="w-4 h-4 text-yellow-300 mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+            </svg>
+            <svg class="w-4 h-4 text-yellow-300 mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+            </svg>
+            <svg class="w-4 h-4 text-yellow-300 mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+            </svg>
+            <svg class="w-4 h-4 text-yellow-300 mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+            </svg>
+            <svg class="w-4 h-4 text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+            </svg>
+            <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
+        </div>
+        
+  
+      <!-- model -->
+        <!-- Open the modal using ID.showModal() method -->
+        <button class="btn" onclick="my_modal_1.showModal()">open modal</button>
+        <dialog id="my_modal_1" class="modal">
+          <form method="dialog" class="modal-box">
+            <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+            <!-- <h3 class="font-bold text-lg">Hello!</h3>
+            <p class="py-4">Press ESC key or click on ✕ button to close</p> -->
+            <div class="card align-content-center justify-content-center text-center">
+                <div class="justify-content-center "><img src="./images/fruit8.png" alt=""></div>
+                <h1>Dragon</h1>
+                <p>rofessional employees are there for you to pick the most 
+                   <br> amazing and fresh fruits</p>
+                   <div><img src="./images/icon-radius.png" alt=""></div>
+                   <div class="two-btn">
+                    <button class="buy-now">close</button>
+                    <button class="buy-now"> Buy now</button>
+                   </div>
+
+            </div>
+          </form>
+        </dialog>
+  
+  <!--  -->
+    </div>
+  </div>
+<!-- 2 -->
+
+
+
+<div class="w-full max-w-sm items-center bg-red-200 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <a href="#">
+        <img class="p-8 rounded-t-lg" src="./images/fruit5.png" alt="product image" />
+    </a>
+    <div class="px-5 pb-5">
+        <a href="#">
+            <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Apple</h5>
+  
+        </a>
+        <!-- price -->
+        <div class="grid  mt-3 items-center ">
+          <span class="text-3xl font-bold text-gray-900 dark:text-white">$599</span>
+        </div>
+  
+        <!-- line -->
+        
+        <div class="line-1 mt-3 w-32 h-1 bg-slate-400 "></div>
+        <!--  -->
+  
+        <div class="flex items-center mt-2.5 mb-5">
+            <svg class="w-4 h-4 text-yellow-300 mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+            </svg>
+            <svg class="w-4 h-4 text-yellow-300 mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+            </svg>
+            <svg class="w-4 h-4 text-yellow-300 mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+            </svg>
+            <svg class="w-4 h-4 text-yellow-300 mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+            </svg>
+            <svg class="w-4 h-4 text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+            </svg>
+            <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
+        </div>
+        <!-- model -->
+        <!-- Open the modal using ID.showModal() method -->
+        <button class="btn" onclick="my_modal_4.showModal()">open modal</button>
+        <dialog id="my_modal_4" class="modal">
+          <form method="dialog" class="modal-box">
+            <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+            <!-- <h3 class="font-bold text-lg">Hello!</h3>
+            <p class="py-4">Press ESC key or click on ✕ button to close</p> -->
+            <div class="card">
+                <div class="justify-content-center "><img src="./images/fruit8.png" alt=""></div>
+                <h1>Dragon</h1>
+                <p>rofessional employees are there for you to pick the most 
+                   <br> amazing and fresh fruits</p>
+                   <div><img src="./images/icon-radius.png" alt=""></div>
+                   <div class="two-btn">
+                    <button class="buy-now">close</button>
+                    <button class="buy-now"> Buy now</button>
+                   </div>
+
+            </div>
+          </form>
+        </dialog>
+        
+        
+          </div>
+        </div>
+  
+  
+    </div>
+  </div>
+<!-- 3 -->
+
+<div class="w-full max-w-sm items-center bg-red-200 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <a href="#">
+        <img class="p-8 rounded-t-lg" src="./images/fruit5.png" alt="product image" />
+    </a>
+    <div class="px-5 pb-5">
+        <a href="#">
+            <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Apple</h5>
+  
+        </a>
+        <!-- price -->
+        <div class="grid  mt-3 items-center ">
+          <span class="text-3xl font-bold text-gray-900 dark:text-white">$599</span>
+        </div>
+  
+        <!-- line -->
+        
+        <div class="line-1 mt-3 w-32 h-1 bg-slate-400 "></div>
+        <!--  -->
+  
+        <div class="flex items-center mt-2.5 mb-5">
+            <svg class="w-4 h-4 text-yellow-300 mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+            </svg>
+            <svg class="w-4 h-4 text-yellow-300 mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+            </svg>
+            <svg class="w-4 h-4 text-yellow-300 mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+            </svg>
+            <svg class="w-4 h-4 text-yellow-300 mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+            </svg>
+            <svg class="w-4 h-4 text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+            </svg>
+            <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
+        </div>
+        <!-- model -->
+        <!-- Open the modal using ID.showModal() method -->
+        <button class="btn" onclick="my_modal_6.showModal()">open modal</button>
+        <dialog id="my_modal_6" class="modal">
+          <form method="dialog" class="modal-box">
+            <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+            <!-- <h3 class="font-bold text-lg">Hello!</h3>
+            <p class="py-4">Press ESC key or click on ✕ button to close</p> -->
+            <div class="card align-content-center justify-content-center text-center">
+                <div class="justify-content-center "><img src="./images/fruit6.png" alt=""></div>
+                <h1>Dragon</h1>
+                <p>rofessional employees are there for you to pick the most 
+                   <br> amazing and fresh fruits</p>
+                   <div><img src="./images/icon-radius.png" alt=""></div>
+                   <div class="two-btn">
+                    <button class="buy-now">close</button>
+                    <button class="buy-now"> Buy now</button>
+                   </div>
+
+            </div>
+          </form>
+        </dialog>
+  
+  
+    </div>
+  </div>
+
+
+<!-- 4 -->
+  
+<div class="w-full max-w-sm items-center bg-red-200 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <a href="#">
+        <img class="p-8 rounded-t-lg" src="./images/fruit5.png" alt="product image" />
+    </a>
+    <div class="px-5 pb-5">
+        <a href="#">
+            <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Apple</h5>
+  
+        </a>
+        <!-- price -->
+        <div class="grid  mt-3 items-center ">
+          <span class="text-3xl font-bold text-gray-900 dark:text-white">$599</span>
+        </div>
+  
+        <!-- line -->
+        
+        <div class="line-1 mt-3 w-32 h-1 bg-slate-400 "></div>
+        <!--  -->
+  
+        <div class="flex items-center mt-2.5 mb-5">
+            <svg class="w-4 h-4 text-yellow-300 mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+            </svg>
+            <svg class="w-4 h-4 text-yellow-300 mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+            </svg>
+            <svg class="w-4 h-4 text-yellow-300 mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+            </svg>
+            <svg class="w-4 h-4 text-yellow-300 mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+            </svg>
+            <svg class="w-4 h-4 text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+            </svg>
+            <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
+        </div>
+        <!-- model -->
+        <!-- Open the modal using ID.showModal() method -->
+        <button class="btn" onclick="my_modal_7.showModal()">open modal</button>
+        <dialog id="my_modal_7" class="modal">
+          <form method="dialog" class="modal-box">
+            <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+            <!-- <h3 class="font-bold text-lg">Hello!</h3>
+            <p class="py-4">Press ESC key or click on ✕ button to close</p> -->
+            <div class="card align-content-center justify-content-center text-center">
+                <div class="justify-content-center "><img src="./images/fruit7.png" alt=""></div>
+                <h1>Dragon</h1>
+                <p>rofessional employees are there for you to pick the most 
+                   <br> amazing and fresh fruits</p>
+                   <div><img src="./images/icon-radius.png" alt=""></div>
+                   <div class="two-btn">
+                    <button class="buy-now">close</button>
+                    <button class="buy-now"> Buy now</button>
+                   </div>
+
+            </div>
+          </form>
+        </dialog>
+  
+    </div>
+  </div>
+<!-- end card -->
+
+</section>
+
+<!-- button more -------------->
+
+
+<div class="items-center justify-center flex mt-7 mb-4 ">
+    <!---------Your content here ---------------->
+    <button class="buy-now" >Shop all</button>
+    
+  </div>
+
+
+<!-- -------- team banner sectioon --------------------->
+
+<section class="mt-3 py-3 my-3 mx-4 rounded-md">
+    <div class="team">
+      <div class="hero min-h-screen" style="background-image: url('./images/banner1.png');">
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content text-center text-neutral-content">
+          <div class="max-w-md">
+            <h1 class="mb-5 text-5xl font-bold">Metting the team section</h1>
+            <p class="mb-5 via-white">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+            
+            
+            
+            <!-- ---------------------team ------------------------>
+            <!-- component -->
+  <!-- MDI Icons -->
+  <link rel="stylesheet" href="https://cdn.materialdesignicons.com/6.5.95/css/materialdesignicons.min.css">
+  
+  <!-- Page Container -->
+  <div class="flex items-center justify-center  py-8">
+      <div class="flex flex-col">
+         
+  
+          <div class="flex flex-col ">
+              <!-- Meet the Team -->
+              
+                  <!-- Team Members -->
+                  <div class="flex flex-wrap">
+                      <!-- Member #1 -->
+                      <div class=" md:w-6/12 lg:w-3/12 mb-3 px-6 sm:px-6 lg:px-4">
+                          <div class="flex flex-col">
+                              <!-- Avatar -->
+                              <a href="#" class="mx-auto">
+                                  <img class="rounded-2xl w-16 h-16 drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
+                                      src="./images/member1.png">
+                              </a>
+  
+                              <!-- Details -->
+                              <div class="text-center mt-6">
+                                  <!-- Name -->
+                                  <h1 class="text-white text-xl font-bold mb-1">
+                                      Tranter Jaskulski
+                                  </h1>
+  
+                                  <!-- Title -->
+                                  <div class="text-white font-light mb-2">
+                                      Founder & Specialist
+                                  </div>
+  
+                                  <!-- Social Icons -->
+                                  <div class="flex items-center justify-center opacity-50 hover:opacity-100
+                                  transition-opacity duration-300">
+                                      <!-- Linkedin -->
+                                      <a href="#" class="flex bg-black rounded-full hover:bg-indigo-50 h-10 w-10">
+                                          <i class="mdi mdi-linkedin text-indigo-500 mx-auto mt-2"></i>
+                                      </a>
+  
+                                      <!-- Twitter -->
+                                      <a href="#" class="flex bg-black rounded-full hover:bg-blue-50 h-10 w-10">
+                                          <i class="mdi mdi-twitter text-blue-300 mx-auto mt-2"></i>
+                                      </a>
+  
+                                      <!-- Instagram -->
+                                      <a href="#" class="flex bg-black rounded-full hover:bg-orange-50 h-10 w-10">
+                                          <i class="mdi mdi-instagram text-orange-400 mx-auto mt-2"></i>
+                                      </a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+  
+                      <!-- Member #2 -->
+                      <div class="w-full  from-white md:w-6/12 lg:w-3/12 mb-6 px-6 sm:px-6 lg:px-4">
+                          <div class="flex flex-col">
+                              <!-- Avatar -->
+                              <a href="#" class="mx-auto">
+                                  <img class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
+                                      src="./images/member2.png">
+                              </a>
+  
+                              <!-- Details -->
+                              <div class="text-center mt-6">
+                                  <!-- Name -->
+                                  <h1 class="from-slate-100 text-xl font-bold mb-1">
+                                      Denice Jagna
+                                  </h1>
+  
+                                  <!-- Title -->
+                                  <div class="text-white font-light mb-2">
+                                      Tired & M. Specialist
+                                  </div>
+  
+                                  <!-- Social Icons -->
+                                  <div class="flex items-center justify-center opacity-50 hover:opacity-100
+                                  transition-opacity duration-300">
+                                      <!-- Linkedin -->
+                                      <a href="#" class="flex bg-black rounded-full hover:bg-indigo-50 h-10 w-10">
+                                          <i class="mdi mdi-linkedin text-indigo-700 mx-auto mt-2"></i>
+                                      </a>
+  
+                                      <!-- Twitter -->
+                                      <a href="#" class="flex bg-black rounded-full hover:bg-blue-50 h-10 w-10">
+                                          <i class="mdi mdi-twitter text-blue-400 mx-auto mt-2"></i>
+                                      </a>
+  
+                                      <!-- Instagram -->
+                                      <a href="#" class="flex bg-black rounded-full hover:bg-orange-50 h-10 w-10">
+                                          <i class="mdi mdi-instagram text-orange-400 mx-auto mt-2"></i>
+                                      </a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+  
+                      <!-- Member #3 -->
+                      <div class="w-full md:w-6/12 lg:w-3/12 mb-6 px-6 sm:px-6 lg:px-4">
+                          <div class="flex flex-col">
+                              <!-- Avatar -->
+                              <a href="#" class="mx-auto">
+                                  <img class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
+                                      src="./images/member3.png">
+                              </a>
+  
+                              <!-- Details -->
+                              <div class="text-center mt-6">
+                                  <!-- Name -->
+                                  <h1 class="from-slate-50 text-xl font-bold mb-1">
+                                      Kenji Milton
+                                  </h1>
+  
+                                  <!-- Title -->
+                                  <div class="text-white font-light mb-2">
+                                      Team Memeber
+                                  </div>
+  
+                                  <!-- Social Icons -->
+                                  <div class="flex items-center justify-center opacity-50 hover:opacity-100
+                                  transition-opacity duration-300">
+                                      <!-- Linkedin -->
+                                      <a href="#" class="flex bg-black rounded-full hover:bg-indigo-50 h-10 w-10">
+                                          <i class="mdi mdi-linkedin text-indigo-700 mx-auto mt-2"></i>
+                                      </a>
+  
+                                      <!-- Twitter -->
+                                      <a href="#" class="flex bg-black rounded-full hover:bg-blue-50 h-10 w-10">
+                                          <i class="mdi mdi-twitter text-blue-400 mx-auto mt-2"></i>
+                                      </a>
+  
+                                      <!-- Instagram -->
+                                      <a href="#" class="flex bg-black rounded-full hover:bg-orange-50 h-10 w-10">
+                                          <i class="mdi mdi-instagram text-orange-400 mx-auto mt-2"></i>
+                                      </a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+  
+                      <!-- Member #4 -->
+                      <div class="w-full md:w-6/12 lg:w-3/12 mb-6 px-6 sm:px-6 lg:px-4">
+                          <div class="flex flex-col">
+                              <!-- Avatar -->
+                              <a href="#" class="mx-auto">
+                                  <img class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
+                                      src="./images/member4.png">
+                              </a>
+  
+                              <!-- Details -->
+                              <div class="text-center mt-6">
+                                  <!-- Name -->
+                                  <h1 class="from-slate-50 text-xl font-bold mb-1">
+                                      Doesn't matter
+                                  </h1>
+  
+                                  <!-- Title -->
+                                  <div class="text-white font-light mb-2">
+                                      Will be fired
+                                  </div>
+  
+                                  <!-- Social Icons -->
+                                  <div class="flex items-center justify-center opacity-50 hover:opacity-100
+                                  transition-opacity duration-300">
+                                      <!-- Linkedin -->
+                                      <a href="#" class="flex rounded-full bg-black hover:bg-indigo-50 h-10 w-10">
+                                          <i class="mdi mdi-linkedin text-indigo-700 mx-auto mt-2"></i>
+                                      </a>
+  
+                                      <!-- Twitter -->
+                                      <a href="#" class="flex bg-black rounded-full hover:bg-blue-50 h-10 w-10">
+                                          <i class="mdi mdi-twitter text-blue-400 mx-auto mt-2"></i>
+                                      </a>
+  
+                                      <!-- Instagram -->
+                                      <a href="#" class="flex bg-black rounded-full hover:bg-orange-50 h-10 w-10">
+                                          <i class="mdi mdi-instagram text-orange-400 mx-auto mt-2"></i>
+                                      </a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ----------------------------------- -->
+<!-- ----------- chosen section  -->
+<!-- ------------------------------------------------------ -->
+
+<section class="choseen orange-bg w-auto py-2 px-3">
+    <!-- top article -->
+        <div class="top_article grid justify-center text-center mb-2">
+    <h1 class="text-3xl">Why Choose Us</h1>
+    <p class="text-lg">Contrary to popular belief, is not simply random text. It has roots in a piece of classical
+       <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+        </div>
+        <!-- 3 card  -->
+        <div class="cards_adjust-3 lg:flex sm:grid gap-7 top-2">
+    
+    
+    <!-- -------------------left article ----------------->
+    
+    <div class="left_article grid">
+        <!-- 1 -->
+        <div class="team flex">
+           
+            <div class="icon"><i class="fa-solid fa-user-group fa-beat-fade"></i></div>
+           
+            <!-- written -->
+    <div class="written_part grid">
+        <div class="grid gap-1">
+            <div><h1>Dedicated Team</h1></div>
+            <div class="line-1 w-32 h-1 bg-black"></div>
+            <div><p class="text-base">Professional employees are there for you to pick
+                the most amazing and fresh fruits</p></div>
+                    </div>          
+    </div>
+    </div>
+    <!-- 2 -->
+    <div class="team flex">
+           
+        <div class="icon"><i class="fa-solid fa-heart-circle-bolt fa-fade fa-2xl"></i></div>
+       
+        <!-- written 2 -->
+    <div class="written_part grid">
+    <div class="grid gap-1">
+        <div><h1>Fresh is Best
+        </h1></div>
+        <div class="line-1 h-1 w-32 bg-black"></div>
+        <div><p class="text-base">Professional employees are there for you to pick
+            the most amazing and fresh fruits</p></div>
+                </div>          
+    </div>
+    </div>
+    
+    <!-- 3 -->
+    <div class="team flex">
+           
+        <div class="icon">
+            <i class="fa-solid fa-gifts fa-fade"></i>
+        </div>
+       
+        <!-- written 2 -->
+    <div class="written_part grid">
+    <div class="grid gap-1">
+        <div>
+            <h1>Gift Certificates
+            </h1>
+        </div>
+        <div class="line-1 w-32 h-1 bg-black"></div>
+        <div><p class="text-base">Professional employees are there for you to pick
+            the most amazing and fresh fruits</p></div>
+                </div>          
+    </div>
+    </div>
+    
+    
+    </div>
+    <!-- end left -->
+    
+    <!-- middle -->
+    <div class="middle-img">
+        <img src="./images/whychoose1.png" alt="">
+    </div>
+    
+    <!-- -------- -->
+    <!-- --------------right----------------->
+    
+    <div class="left_article grid">
+        <!-- 1 -->
+        <div class="team flex">
+              
+            <!-- written  -->
+    <div class="written_part grid">
+        <div class="grid gap-1">
+            <div class="flex gap-2"><h1 class="text-2xl ">Integrated Supplier </h1> 
+                <div class="icon "><i class="fa-solid fa-boxes-packing fa-xl"></i>
+                </div></div>
+            <div class="line-1 h-1 w-44 bg-black"></div>
+            <div><p class="text-base">Professional employees are there for you to pick
+                the most amazing and fresh fruits</p></div>
+                    </div>          
+    </div>
+    
+    
+    </div>
+    
+    <!-- 2 -->
+    
+    <div class="team flex">
+              
+        <!-- written  -->
+    <div class="written_part grid">
+    <div class="grid gap-1">
+        <div class="flex gap-2"><h1 class="text-2xl ">Sustainable Practice </h1> 
+            <div class="icon "><i class="fa-sharp fa-solid fa-stethoscope fa-fade fa-2xl"></i>
+            </div></div>
+        <div class="line-1 h-1 w-44 bg-black"></div>
+        <div><p class="text-base">Professional employees are there for you to pick
+            the most amazing and fresh fruits</p></div>
+                </div>          
+    </div>
+    
+    
+    </div>
+    
+    <!-- 3 -->
+    
+    <div class="team flex">
+              
+        <!-- written  -->
+    <div class="written_part grid">
+    <div class="grid gap-1">
+        <div class="flex gap-2"><h1 class="text-2xl ">The Benefits Only </h1> 
+            <div class="icon "><i class="fa-solid fa-thumbs-up fa-fade fa-2xl"></i>
+            </div></div>
+        <div class="line-1 h-1 w-44 bg-black"></div>
+        <div><p class="text-base">Professional employees are there for you to pick
+            the most amazing and fresh fruits</p></div>
+                </div>          
+    </div>
+    
+    
+    </div>
+    
+    
+    
+    </div>
+    
+    <!-- end right -->
+    
+    
+        </div>
+    
+    </section>
+
+
+</main>
+
+<!-- end main  -->
+<!---------------------- footer area----------- -->
+
+
+<footer>
+    <div class="mb-3 rounded-2xl bg-black justify-center items-center grid gap-4">
+           <!--  -->
+       <div class="footer-icon inline-flex text-center ">
+           <img src="./images/logo.png" alt="">
+           <h1 class="text-3xl text-fuchsia-100">Fruit Burst</h1>
+       
+       </div>
+       
+       <!-- ---------inline item --------------->
+       <div class="item_footer inline-flex gap-4 list-none">
+           <li class="text-fuchsia-100" >Home </li>
+           <li class="text-fuchsia-100" >About us </li>
+           
+           <li class="text-fuchsia-100"> support</li>
+           <li class="text-fuchsia-100"> My Accout</li>
+       </div>
+       <!-- social icon -->
+       
+       <div class="social_icon py-3 mt-6  px-4 inline-flex gap-4">
+           
+              <div> <i class="fa-brands fa-facebook fa-lg text-fuchsia-100"></i></div>
+               <div><i class="fa-brands fa-square-instagram fa-lg text-fuchsia-100 "></i></div>
+              <div> <i class="fa-brands fa-square-twitter fa-lg text-fuchsia-100"></i></div>
+               <div><i class="fa-brands fa-apple fa-lgtext-fuchsia-100 fa-lg text-fuchsia-100 "></i></div>
+           
+         </div>
+       
+       </div>
+       
+   </footer>
+
+
+
+</body>
+</html>
